@@ -1,11 +1,11 @@
-RF-Biom-Inference : Système d'Imagerie Passive par Perturbation RF 🛰️
+# RF-Biom-Inference : Système d'Imagerie Passive par Perturbation RF 🛰️
 
-🔬 Présentation du Projet
+### 🔬 Présentation du Projet
 Ce projet est une preuve de concept (PoC) explorant les capacités des infrastructures WLAN existantes (IEEE 802.11n/ac) à agir comme des systèmes de radar passif.
 
 En exploitant les données CSI (Channel State Information) extraites de la couche physique (PHY) du Wi-Fi, cet outil est capable de détecter la présence humaine et d'isoler des signatures biométriques (respiration) à travers des parois, sans contact visuel et sans caméras.
 
-🛠️ Architecture du Système
+### 🛠️ Architecture du Système
 Le projet repose sur une chaîne de traitement complète :
 
 Hardware (Sensor) : Un microcontrôleur ESP32 configuré en mode sniffer pour l'extraction brute des trames CSI.
@@ -14,7 +14,7 @@ Firmware (Data Bridge) : Code C++ optimisé pour le streaming des sous-porteuses
 
 Software (Inference Engine) : Moteur de traitement de signal en Python utilisant des filtres de Butterworth et l'analyse spectrale (FFT).
 
-🚀 Fonctionnalités
+### 🚀 Fonctionnalités
 Analyse Multidimensionnelle : Monitoring simultané de 64 sous-porteuses Wi-Fi.
 
 Détection de Présence : Analyse de la variance inter-porteuse pour identifier les mouvements.
@@ -23,7 +23,7 @@ Extraction Biométrique : Isolation des fréquences de micro-oscillations (0.15H
 
 Mode Hybride : Basculement automatique entre le streaming hardware réel et la simulation de laboratoire.
 
-📋 Installation & Déploiement
+### 📋 Installation & Déploiement
 Prérequis
 Python 3.8+
 
@@ -43,7 +43,7 @@ Bash
 python rf_biom_engine.py
 
 
-⚠️ Implications
+### ⚠️ Implications
 Cette recherche met en lumière deux vecteurs critiques :
 
 Confidentialité : La possibilité de monitorer l'activité physique à l'intérieur de zones privées via l'infrastructure Wi-Fi In-Wall standard.
